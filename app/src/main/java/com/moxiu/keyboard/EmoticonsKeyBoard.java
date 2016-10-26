@@ -122,7 +122,12 @@ public class EmoticonsKeyBoard extends AutoHeightLayout implements View.OnClickL
     public void OnSoftClose() {
         super.OnSoftClose();
 //        setFuncViewHeight(EmoticonsKeyboardUtils.dip2px(getContext(), APPS_HEIGHT));
-        mLyKvml.hideAllFuncView();
+        if(mLyKvml.isShowPanel()) {
+            mLyKvml.setResetKeyShowPanel();
+            return;
+        }
+            mLyKvml.hideAllFuncView();
+
     }
     public void addOnFuncKeyBoardListener(FuncLayout.OnFuncKeyBoardListener l) {
         mLyKvml.addOnKeyBoardListener(l);

@@ -42,6 +42,7 @@ public class FuncLayout extends LinearLayout {
 
         //键盘打开
         if (isSoftKeyboardPop) {
+            isKeyShowPanel=true;
             if (EmoticonsKeyboardUtils.isFullScreen((Activity) getContext())) {
                 EmoticonsKeyboardUtils.closeSoftKeyboard(editText);
             } else {
@@ -97,6 +98,14 @@ public class FuncLayout extends LinearLayout {
             mListenerList = new ArrayList<>();
         }
         mListenerList.add(l);
+    }
+    boolean isKeyShowPanel=false;
+    public boolean isShowPanel() {
+        return isKeyShowPanel;
+    }
+
+    public void setResetKeyShowPanel() {
+        isKeyShowPanel=false;
     }
 
     public interface OnFuncKeyBoardListener {
