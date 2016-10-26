@@ -19,6 +19,6 @@ public class KeyBoardActivity extends AppCompatActivity {
     @Override
     protected void onPause() {
         super.onPause();
-        ek_bar.onPause();
+        ek_bar.onResume();
     }
 }

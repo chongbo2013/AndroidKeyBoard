@@ -102,6 +102,7 @@ public class EmoticonsKeyBoard extends AutoHeightLayout implements View.OnClickL
     public void reset() {
         EmoticonsKeyboardUtils.closeSoftKeyboard(this);
         mLyKvml.hideAllFuncView();
+        mEtChat.setFocusable(false);
     }
 
     protected void setFuncViewHeight(int height) {
@@ -223,7 +224,7 @@ public class EmoticonsKeyBoard extends AutoHeightLayout implements View.OnClickL
     }
 
 
-    public void onPause(){
+    public void onResume(){
         reset();
     }
 }
