@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="tm_transparent">#00000000</color>
+    <color name="tm_text_white_non_transparency_30">#4DCCEEFF</color>
+    <color name="tm_text_white_non_transparency_10">#1ACCEEFF</color>
+    <color name="tm_input_background">#16385b</color>
+    <color name="tm_message_dialog_bottom_view_line">#1ACCEEFF</color>
+    <color name="tm_tab_text_color">#00e5d2</color>
+</resources>
